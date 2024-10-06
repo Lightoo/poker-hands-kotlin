@@ -1,6 +1,7 @@
 package org.example.rules
 
 import org.example.Card
+import org.example.Player
 import org.example.PokerHand
 import org.example.enums.Suit
 import org.example.enums.Value
@@ -17,7 +18,13 @@ object Utils {
             )
         )
 
-    private fun cardOf(suit: Suit, value: Value): Card {
+    fun allPokerRules(): Array<PokerRule>{
+        TODO()
+    }
+    fun playerWithHandOf(name: String, vararg cards: Card): Player {
+        TODO()
+    }
+    fun cardOf(suit: Suit, value: Value): Card {
         return Card(suit, value)
     }
 }
