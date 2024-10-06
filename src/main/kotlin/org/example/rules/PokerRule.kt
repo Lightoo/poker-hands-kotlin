@@ -5,7 +5,7 @@ import org.example.Score
 
 
 interface PokerRule {
-    fun isTheRuleApplicable(pokerHand: PokerHand?): Boolean
-    fun getScore(pokerHand: PokerHand?): Score?
+    fun isTheRuleApplicable(pokerHand: PokerHand): Boolean
+    fun getScore(pokerHand: PokerHand): Score
     val priority: Int
 }
