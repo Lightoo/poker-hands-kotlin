@@ -1,5 +1,5 @@
 package org.example
 
-class Player(name: String, pokerHand: PokerHand) {
+class Player(val name: String, val pokerHand: PokerHand) {
 
 }

@@ -18,13 +18,11 @@ object Utils {
             )
         )
 
-    fun allPokerRules(): Array<PokerRule>{
-        TODO()
-    }
-    fun playerWithHandOf(name: String, vararg cards: Card): Player {
-        TODO()
-    }
-    fun cardOf(suit: Suit, value: Value): Card {
-        return Card(suit, value)
-    }
+    fun allPokerRules(): Array<PokerRule> = arrayOf(
+        HighCard()
+    )
+    fun playerWithHandOf(name: String, vararg cards: Card): Player = Player(name,pokerHandOf(*cards))
+    fun cardOf(suit: Suit, value: Value): Card = Card(suit, value)
+    private fun pokerHandOf(vararg cards: Card): PokerHand = PokerHand(HashSet(listOf(*cards)))
+
 }
